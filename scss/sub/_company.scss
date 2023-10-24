@@ -1,0 +1,473 @@
+.company {
+    width: 100%;
+    background-color: #f4fbfb;
+	margin-bottom: 600px;
+    .company_inner {
+        width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        padding-top: 100px;
+        overflow: hidden;
+        z-index: 10;
+        padding-bottom: 100px;
+        .company_subLeft {
+            width: 840px;
+            .company_box {
+                width: 100%;
+                height: 50vh;
+                background: linear-gradient(
+                    115.03deg,
+                    #3b7f95 14.52%,
+                    #2b418d 73.6%
+                );
+                padding: 50px;
+                border-radius: 30px;
+                position: relative;
+                p {
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin-bottom: 30px;
+                    color: #fff;
+                }
+                h2 {
+                    font: bold 25px "맑은 고딕";
+                    margin-bottom: 50px;
+                    color: #fff;
+                }
+                .company_btn {
+                    background-color: #fff;
+                    padding: 10px 30px;
+                    border-radius: 30px;
+                    font-size: 15px;
+                    color: #000;
+                }
+                .company_imgBox {
+                    position: absolute;
+                    bottom: 0px;
+                    right: 20px;
+                }
+            }
+            .company_subBox {
+                width: 100%;
+                margin-top: 80px;
+                position: relative;
+                .company_sub {
+                    .company_sub_header {
+                        padding: 20px;
+                        p {
+                            color: #888;
+                            font-weight: bold;
+                            margin-bottom: 15px;
+                        }
+                        span {
+                            width: 790px;
+                            display: flex;
+                            justify-content: space-between;
+                            h2 {
+                                font-weight: bold;
+                                font-size: 25px;
+                                margin-bottom: 20px;
+                            }
+                            .company_btnBox {
+                                display: flex;
+                                gap: 10px;
+                                .company_btn {
+                                    width: 7px;
+                                    height: 7px;
+                                    background-color: #3b7f95;
+                                    border-radius: 20px;
+                                    cursor: pointer;
+                                    &.on {
+                                        width: 20px;
+                                        background-color: blueviolet;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .comapny_subTwo {
+                        display: flex;
+                        position: relative;
+                        overflow: hidden;
+                        .company_subTwoSli {
+                            gap: 15px;
+                            display: flex;
+                            article {
+                                width: 270px;
+                                height: 284px;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                                &::before {
+                                    content: "";
+                                    width: 267px;
+                                    height: 280px;
+                                    border: 1px solid #222;
+                                    border-radius: 15px;
+                                    opacity: 0;
+                                    position: absolute;
+                                    display: block;
+                                }
+                                &:hover {
+                                    &::before {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .company_subTwoBtn {
+                        width: 840px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: absolute;
+                        top: 9.2%;
+                        .fa-chevron-right,
+                        .fa-chevron-left {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 30px;
+                            opacity: 0;
+                            cursor: pointer;
+                            &.on {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                .company_subThree {
+                    .company_subThreeBox {
+                        border: 1px solid #ccc;
+                        border-radius: 15px;
+                        position: relative;
+                        section {
+                            padding: 40px;
+                            display: flex;
+                            justify-content: space-between;
+                            .company_subThreeBox_title {
+                                h3 {
+                                    font-size: 18px;
+                                    margin-bottom: 10px;
+                                }
+                                p {
+                                    font: bold 14px "맑은 고딕";
+                                    color: #888;
+                                    margin-bottom: 30px;
+                                }
+                                .company_nav {
+                                    a {
+                                        color: #222;
+                                        font: bold 16px "맑은 고딕";
+                                        &:hover {
+                                            border-bottom: 1px solid black;
+                                        }
+                                    }
+                                    i {
+                                        font-size: 12px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .company_subRight {
+            width: 280px;
+            margin-left: 50px;
+            z-index: 3;
+            .company_login{
+                width: 300px;
+                height: 219px;
+                padding: 48px 0px 0px 0px;
+                p{
+                    font-size: 14px;
+                    font-weight: bold;
+                    letter-spacing: -1px;
+                    margin-bottom: 12px;
+                }
+                h2{
+                    font-size: 24px;
+                    letter-spacing: -1px;
+                    margin-bottom: 24px;
+                }
+                .login_btn{
+                    width: 270px;
+                    height: 56px;
+                    border-radius: 5px;
+                    padding: 0px 23px;
+                    text-align: center;
+                    cursor: pointer;
+                    background: linear-gradient(271.08deg, #174AAE 15.53%, #28949B 83.8%);
+                    a{
+                        color: #fff;
+                        font: bold 16px/56px "맑은 고딕";
+                    }
+                }
+                .company_center{
+                    margin-top: 10px;
+                    position: relative;
+                    p{
+                        font: bold 12px "맑은 고딕";
+                        margin-right: 10px;
+                        cursor: pointer;
+                        .fa-caret-right{
+                            position: absolute;
+                            right: 65%;
+                            top: 13%;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            text-align: center;
+                            line-height: 12px;
+                            font-size: 7px;
+                            background-color: #111;
+                            color: #fff;
+                        }
+                    }
+                    
+                }
+            }
+            section{
+                margin-top: 50px;
+                padding: 40px 30px;
+                background-color: #fff;
+                border: 1px solid rgba($color: #000, $alpha: 0.1);
+                border-radius: 10px;
+                .comapny_check{
+                    position: relative;
+                    h3{
+                        font-size: 17px;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        font-weight: bold;
+                        color: #999;
+                        letter-spacing: -1px;
+                        font-size: 13px;
+                    }
+                    .fa-bolt{
+                        position: absolute;
+                        right: 10px;
+                        top: 10px;
+                        font-size: 28px;
+                        background: linear-gradient(270deg, yellow, rgb(146, 146, 146));
+                        color: transparent;
+                        -webkit-background-clip: text;
+                    }
+                    &::after{
+                        content: '';
+                        display: block;
+                        margin: 30px 0px;
+                        width: 200px;
+                        height: 8px;
+                        border-radius: 5px;
+                        background-color: rgba($color: #999, $alpha: 0.1);
+                    }
+                }
+                .company_menu{
+                    width: 234px;
+                    .company_menuText{
+                        position: relative;
+                        h3{
+                            letter-spacing: -1px;
+                            font-size: 16px;
+                            margin-bottom: 24px;
+                        }
+                        p{
+                            margin-bottom: 30px;
+                            letter-spacing: -1px;
+                            color: #9c9c9c;
+                            cursor: pointer;
+                            font-size: 12px;
+                            &:hover{
+                                color: blueviolet;
+                                text-decoration: underline;
+                            }
+                            .fa-chevron-right{
+                                position: absolute;
+                                right: 30px;
+                                font-size: 12px;
+                            }
+                            &::after{
+                                content: '';
+                                display: block;
+                                width: 220px;
+                                height: 1px;
+                                background-color: rgba($color: #999, $alpha: 0.3);
+                                margin-top: 20px;
+                            }
+                            &:last-child{
+                                margin-bottom: 0px;
+                                &::after{
+                                    background-color: #fff;
+                                    margin-bottom: -20px;
+                                }
+                            }
+                        }
+                    }  
+                }
+            }
+        }
+    }
+    .company_visual {
+        width: 100%;
+        height: 580px;
+        background-image: url(../../img/sub_page/기업/bg_visual1.png);
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        position: absolute;
+        left: 0px;
+        opacity: 1;
+        z-index: -1;
+        transition: all 0.5s;
+        .company_section_BOX {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 0px;
+            .company_visual_box_fir {
+                width: 840px;
+                height: 224px;
+                background-color: #f6f7f3;
+                padding: 40px 50px;
+                border-radius: 15px;
+                h3 {
+                    margin-bottom: 20px;
+                }
+                p {
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                    font: bold 15px "맑은 고딕";
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .company_visual_sub {
+                display: flex;
+                margin-top: 15px;
+                .company_visual_sub_fir {
+                    width: 414px;
+                    height: 174px;
+                    background-color: #ccf7b8;
+                    border-radius: 15px;
+                    margin-right: 15px;
+                    padding: 40px 30px;
+                    .company_visual_sub_fir_title {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+                        button {
+                            width: 128px;
+                            height: 24px;
+                            border: none;
+                            background-color: #ccf7b8;
+                            p {
+                                width: 100%;
+                                height: 100%;
+                                background-color: #fff;
+                                border: 1px solid #aaa;
+                                font: bold 12px/24px "맑은 고딕";
+                                padding: 0px 5px;
+                                border-radius: 5px;
+                                color: #333;
+                                text-align: center;
+                                cursor: pointer;
+                                &:hover {
+                                    border: 1px solid black;
+                                }
+                            }
+                        }
+                    }
+                    .company_visual_sub_fir_subtitle {
+                        b {
+                            font: bold 18px "맑은 고딕";
+                        }
+                        p {
+                            font: normal 14px "맑은 고딕";
+                            display: flex;
+                            gap: 10px;
+                            span {
+                                width: 1px;
+                                height: 12px;
+                                background-color: #8c8c8c;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .company_section_right {
+            padding: 50px 40px;
+            margin-left: 50px;
+            background: #121a2e;
+            width: 300px;
+            height: 414px;
+            color: #fff;
+            border-radius: 15px;
+            h3 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 14px;
+                margin-bottom: 35px;
+            }
+            .company_qr {
+                width: 218px;
+                height: 176px;
+                .company_smartphone {
+                    width: 218px;
+                    height: 84px;
+                    display: flex;
+                    position: relative;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    padding: 24px 110px 24px 29px;
+                    font-size: 13px;
+                    .company_qr_box {
+                        h4 {
+                            color: #121517;
+                        }
+                        p {
+                            color: #707070;
+                        }
+                    }
+                    .company_qr_img {
+                        width: 64px;
+                        height: 64px;
+                        position: absolute;
+                        right: 25px;
+                        top: 15%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .company_And {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .backgroundOn {
+        position: relative;
+        opacity: 1;
+        z-index: 99;
+    }
+}

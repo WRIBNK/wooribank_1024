@@ -1,0 +1,254 @@
+.hidden {
+	width: 0;
+	height: 0;
+	margin-left: -999999999px;
+}
+.down {
+	transform: translateY(272px);
+}
+#private {
+	width: 100%;
+	.inner {
+		width: 950px;
+		margin: 0 auto;
+		.navi {
+			width: 735px;
+			height: 100px;
+			margin: 0 auto;
+			display: flex;
+			li {
+				width: 105px;
+				height: 64px;
+				margin-top: 25px;
+				.imgBox {
+					width: 100%;
+					height: 49px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img {
+						object-fit: cover;
+					}
+				}
+				.txtBox {
+					width: 100%;
+					height: 15px;
+					display: flex;
+					justify-content: center;
+					margin-top: 5px;
+					a {
+						font: 14px/1 '맑은 고딕';
+						color: #333;
+						letter-spacing: -1px;
+						&:hover {
+							border-bottom: 1px solid #333;
+						}
+					}
+				}
+			}
+		}
+		.content {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			.wonPlus {
+				position: absolute;
+				width: 100%;
+				height: 272px;
+				z-index: -2;
+				.imgBox {
+					width: 100%;
+					height: 100%;
+					img {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+					}
+				}
+				.viewMore {
+					position: absolute;
+					bottom: 20%;
+					left: 0;
+					width: 90px;
+					height: 33px;
+					border: 1px solid #aaa;
+					border-radius: 16.5px;
+					box-shadow: 0px 1px 1px #777;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					a {
+						font: bold 14px/1 '맑은 고딕';
+						letter-spacing: -1px;
+						color: #333;
+						&:hover {
+							border-bottom: 1px solid #333;
+							&:hover {
+								border-bottom: 1px solid #333;
+							}
+						}
+					}
+				}
+			}
+			.mainEvent {
+				position: relative;
+				width: 100%;
+				height: 272px;
+				.bgColor {
+					position: absolute;
+					left: calc(-100vw + 50vw + 475px);
+					z-index: -1;
+					background-color: #f6fbff;
+					width: 100vw;
+					height: 100%;
+				}
+				.imgBox {
+					width: 100%;
+					height: 100%;
+					img {
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+				.viewMore {
+					position: absolute;
+					bottom: 14%;
+					left: 58%;
+					width: 90px;
+					height: 33px;
+					border: 1px solid #aaa;
+					border-radius: 16.5px;
+					box-shadow: 0px 1px 1px #777;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					a {
+						font: bold 14px/1 '맑은 고딕';
+						letter-spacing: -1px;
+						color: #333;
+						&:hover {
+							border-bottom: 1px solid #333;
+						}
+					}
+				}
+			}
+			.mobileBank {
+				position: relative;
+				width: 100%;
+				height: 272px;
+				.imgBox {
+					width: 100%;
+					height: 100%;
+					img {
+						position: absolute;
+						top: 0;
+						left: 0%;
+					}
+				}
+				.viewMore {
+					position: absolute;
+					bottom: 28%;
+					left: 0%;
+					width: 90px;
+					height: 33px;
+					border: 1px solid #aaa;
+					border-radius: 16.5px;
+					box-shadow: 0px 1px 1px #777;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					a {
+						font: bold 14px/1 '맑은 고딕';
+						letter-spacing: -1px;
+						color: #333;
+						&:hover {
+							border-bottom: 1px solid #333;
+						}
+					}
+				}
+			}
+			.promotion {
+				width: 100%;
+				height: 179px;
+				border-top: 2px solid #e0e0e0;
+				> .list {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					.first,
+					.second {
+						width: 317px;
+						height: 100%;
+						border-right: 1px solid #e0e0e0;
+						> h4 {
+							font: bold 16px/1 '맑은 고딕';
+						}
+						.use-guide {
+							width: 316px;
+							height: 126px;
+							> ul {
+								margin-top: 11px;
+								> li {
+									background-image: url(../img/promotion_dot.gif);
+									background-repeat: no-repeat;
+									background-position-y: center;
+									float: left;
+									padding-left: 8px;
+									margin-bottom: 3px;
+									a {
+										font: 14px/1 '맑은 고딕';
+										color: #333;
+										letter-spacing: -1px;
+										&:hover {
+											color: #339f5c;
+											border-bottom: 1px solid #339f5c;
+										}
+									}
+								}
+							}
+						}
+					}
+					.first {
+						padding-top: 15px;
+						.use-guide {
+							> ul {
+								> li {
+									width: 50%;
+								}
+							}
+						}
+					}
+					.second {
+						padding: 15px 0 0 16px;
+						.use-guide {
+							> ul {
+								> li {
+									width: calc(100% - 16px);
+								}
+							}
+						}
+					}
+					.third {
+						width: 296px;
+						height: 167.75px;
+						padding: 15px 0 0 20px;
+						a {
+							width: 100%;
+							height: 100%;
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

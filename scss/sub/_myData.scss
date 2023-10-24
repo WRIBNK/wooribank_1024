@@ -1,0 +1,131 @@
+#myData{
+    min-width: 950px;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    .imgBox{
+        width: 100%;
+        height: 45vh;
+        // 띄우기용
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .myData_inner{
+        width: 950px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 15vh;
+        .txtBox{
+            width: 530px;
+            display: block;
+            margin-left: 20px;
+            .txtImgBox{
+                width: 100%;
+                margin-top: 5px;   
+            }
+            .in_txt{
+                width: 100%;
+                margin-top: 20px;
+                font: normal 16px/1.4 "arial";
+                color: #fff;
+            }
+            
+        }
+        .myD_btnBox{
+            width: 530px;
+            height: 88px;
+            position: absolute;
+            top: 480px;
+            display: flex;
+            justify-content: center;align-items: center;
+            // 버튼 공통 스타일
+            .myD_btn{
+                position: relative;
+                width: 260px;
+                height: 100%;
+                border-radius: 18px;
+                margin-left: 10px;
+                padding: 18px 30px;
+                font: normal 12px/1 "arial";
+                color: #fff;
+                // 글자정렬
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                strong{
+                    display: block;
+                    width: 100%;
+                    height: 24px;
+                    font-size: 1rem;
+                    line-height: 24px;
+                }
+            }
+            // 버튼 개별 스타일
+            .join{
+                margin-left: 0;
+                background-color: #0065FF;
+                .joinImgBox{
+                    position: absolute;
+                    right: 30px;
+                }
+            }
+            .guide{
+                background-color: #212529;
+                .guideImgBox{
+                    position: absolute;
+                    right: 30px;
+                }
+            }
+        }
+        .phone{
+            position: absolute;
+            top: 80px;right: 46px;
+            padding: 6px;
+            width: 240px;
+            height: 506px;
+            box-shadow: 0px 26px 10px rgba(0, 0, 0, 0.23);
+            border-radius: 32px;
+            background-color: #efefef;
+            overflow: hidden;
+            ul.phone_frame{
+                width: 300%;
+                height: 100%;
+                position: relative;
+                transition: .5s;
+                li{
+                    width: calc(100% / 3);
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: .5s;
+                    &:nth-of-type(1){
+                        left: 0;
+                    }
+                    &:nth-of-type(2){
+                        left: 234px;
+                        // transition: 0;
+                    }
+                    &:nth-of-type(3){
+                        left: 474px;
+                    }
+                    img{
+                        width: 240px;
+                        height: 100%;
+                        object-fit: cover;
+                        border: none;
+                    }        
+                }
+            }
+        }
+    }
+}
+

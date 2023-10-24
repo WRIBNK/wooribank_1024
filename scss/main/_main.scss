@@ -1,0 +1,28 @@
+.main_slider {
+	width: 100%;
+	height: 585px;
+	padding-top: 65px;
+	overflow: hidden;
+	.slide {
+		width: calc(100% * 5);
+		height: 100%;
+		display: flex;
+		.panel {
+			width: 20%;
+			height: 530px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgb(249, 244, 255);
+			.imgBox {
+				width: 980px;
+				height: 535px;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}

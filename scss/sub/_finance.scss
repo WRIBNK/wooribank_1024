@@ -1,0 +1,383 @@
+#financial_instruments {
+		width: 100%;
+		background-color: transparent;
+
+		.inner {
+			width: 950px;
+			margin: 20px auto 0;
+			.navi {
+				width: 100%;
+				ul {
+					width: 840px;
+					margin: 0 auto;
+					&::after {
+						content: '';
+						display: block;
+						clear: both;
+					}
+					li {
+						float: left;
+						width: 105px;
+						display: flex;
+						flex-direction: column;
+						cursor: pointer;
+						&:hover {
+							.txtBox {
+								a {
+									border-bottom: 1px solid #000;
+								}
+							}
+						}
+						.imgBox {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							height: 45px;
+						}
+						.txtBox {
+							width: 100%;
+							margin-top: 10px;
+							display: flex;
+							justify-content: center;
+							a {
+								font: 14px/1 '맑은 고딕';
+								color: #333;
+								letter-spacing: -2px;
+							}
+						}
+					}
+				}
+			}
+			.contentTitle {
+				width: 100%;
+				height: 95px;
+				h2 {
+					font: bold 24px/95px '맑은 고딕';
+					color: #333;
+					height: 100%;
+				}
+			}
+			.content {
+				padding-bottom: 75px;
+				.bannerTop {
+					width: 100%;
+					height: 19px;
+					margin: 20px 0 15px;
+					display: flex;
+					justify-content: flex-end;
+					.img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+				.banner {
+					width: 100%;
+					height: 100px;
+				}
+				.tab {
+					width: 100%;
+					height: 37px;
+					margin: 30px 0px;
+					ul {
+						width: 100%;
+						height: 100%;
+						display: flex;
+						li {
+							width: 237px;
+							padding: 0 10px;
+							border: 1px solid #cbcbcb;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							cursor: pointer;
+							a {
+								font: bold 14px/1 '맑은 고딕';
+								letter-spacing: -0.75pt;
+								color: #000;
+							}
+							&.on {
+								background-color: #4fa528;
+								a {
+									color: #fff;
+								}
+							}
+							&:hover {
+								a {
+									border-bottom: 1px solid #000;
+								}
+								&.on {
+									a {
+										border-bottom: 1px solid #fff;
+									}
+								}
+							}
+						}
+					}
+				}
+				.info_aria {
+					width: 100%;
+					height: 18px;
+					&::after {
+						content: '';
+						display: block;
+						clear: both;
+					}
+					.info {
+						float: right;
+						.info_txt {
+							display: flex;
+							font: 12px/1 '맑은 고딕';
+							color: #555;
+							dt {
+								font-weight: bold;
+							}
+							dd {
+								strong {
+									color: red;
+								}
+							}
+						}
+					}
+				}
+				.product_list {
+					width: 100%;
+					display: none;
+					&.on {
+						display: block;
+						.productBox {
+							width: 100%;
+							height: 218px;
+							margin-top: 20px;
+							padding: 25px 0;
+							border-top: 1px solid #dedede;
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: space-between;
+							.product_info {
+								> dl {
+									margin-bottom: 15px;
+									dd {
+										em {
+											font: bold 16px/1 '맑은 고딕';
+											color: #e74700;
+											letter-spacing: -1px;
+										}
+										margin-bottom: 10px;
+									}
+									dt {
+										height: 30px;
+										position: relative;
+										a {
+											position: absolute;
+											font: bold 28px/1 '맑은 고딕';
+											color: #333;
+											&:hover {
+												border-bottom: 2px solid #000;
+											}
+										}
+										margin-bottom: 8px;
+									}
+									p {
+										font: 12px/1 '맑은고딕';
+										color: #135f07;
+									}
+								}
+								.btns_area {
+									display: flex;
+									align-items: center;
+									gap: 20px;
+									.white {
+										height: 36px;
+										display: flex;
+										align-items: center;
+										padding: 0 17px 0 13px;
+										font: bold 14px/1 '맑은 고딕';
+										background-color: #eee;
+										border: 1px solid #ccc;
+										border-radius: 18px;
+										letter-spacing: -1px;
+									}
+									.green {
+										height: 36px;
+										display: flex;
+										align-items: center;
+										padding: 0 20px 0 17px;
+										background-color: #37990af8;
+										border: 1px solid #ccc;
+										border-radius: 18px;
+										cursor: pointer;
+										a {
+											font: bold 14px/1 '맑은 고딕';
+											color: #fff;
+											letter-spacing: -1px;
+										}
+										&:hover {
+											a {
+												color: #ddd;
+												border-bottom: 1px solid #fff;
+											}
+										}
+									}
+									.put {
+										padding: 0 0 0 25px;
+										background-image: url(../img/heart.gif);
+										background-repeat: no-repeat;
+										height: 15px;
+										font: 14px/1 '맑은 고딕';
+										color: #777;
+									}
+									> .txtBox {
+										padding-left: 17px;
+										border-left: 1px solid #ccc;
+										height: 15px;
+										display: flex;
+										align-items: center;
+										.compare {
+											padding: 0 0 0 25px;
+											background-image: url(../img/compare.gif);
+											background-repeat: no-repeat;
+											font: 14px/1 '맑은 고딕';
+											color: #777;
+										}
+									}
+								}
+							}
+
+							.prd_img {
+								width: 204px;
+								height: 166px;
+								padding-right: 28px;
+
+								> dl {
+									width: 176px;
+									height: 146px;
+									padding-top: 20px;
+									background-image: url(../img/prd_img.gif);
+									background-repeat: no-repeat;
+									background-position-x: center;
+									dt {
+										text-align: center;
+										&:nth-of-type(1) {
+											font: 17px/1 '맑은고딕';
+											color: #6a6969;
+											letter-spacing: -1px;
+										}
+										&:nth-of-type(2),
+										&:nth-of-type(3) {
+											margin-top: 5px;
+											font: 13px/1 '맑은고딕';
+											color: #6a6969;
+											letter-spacing: -1px;
+										}
+									}
+									dd {
+										&.percent {
+											div {
+												padding-top: 2px;
+												display: flex;
+												align-items: center;
+												justify-content: center;
+												span {
+													font: 20px/1 '맑은고딕';
+													color: #6a6969;
+													padding-top: 10px;
+												}
+												strong {
+													font: bold 30px/1 '맑은 고딕';
+													color: #339f5c;
+													padding-left: 8px;
+													letter-spacing: -1px;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.promotion {
+					width: 100%;
+					height: 179px;
+					border-top: 2px solid #e0e0e0;
+					> .list {
+						width: 100%;
+						height: 100%;
+						display: flex;
+						.first,
+						.second {
+							width: 317px;
+							height: 100%;
+							border-right: 1px solid #e0e0e0;
+							> h4 {
+								font: bold 16px/1 '맑은 고딕';
+							}
+							.use-guide {
+								width: 316px;
+								height: 126px;
+								> ul {
+									margin-top: 11px;
+									> li {
+										background-image: url(../img/promotion_dot.gif);
+										background-repeat: no-repeat;
+										background-position-y: center;
+										float: left;
+										padding-left: 8px;
+										margin-bottom: 3px;
+										a {
+											font: 14px/1 '맑은 고딕';
+											color: #333;
+											letter-spacing: -1px;
+											&:hover {
+												color: #339f5c;
+												border-bottom: 1px solid #339f5c;
+											}
+										}
+									}
+								}
+							}
+						}
+						.first {
+							padding-top: 15px;
+							.use-guide {
+								> ul {
+									> li {
+										width: 50%;
+									}
+								}
+							}
+						}
+						.second {
+							padding: 15px 0 0 16px;
+							.use-guide {
+								> ul {
+									> li {
+										width: calc(100% - 16px);
+									}
+								}
+							}
+						}
+						.third {
+							width: 296px;
+							height: 167.75px;
+							a {
+								width: 100%;
+								height: 100%;
+								img {
+									width: 100%;
+									height: 100%;
+									object-fit: cover;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		footer {
+			width: 100%;
+			height: 150px;
+			border-top: 1px solid #000;
+		}
+	}

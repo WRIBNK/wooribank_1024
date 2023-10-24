@@ -1,0 +1,48 @@
+.service {
+	width: 100%;
+	height: 352px;
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		width: 980px;
+		font-size: 25px;
+		color: #000;
+		margin-bottom: 25px;
+	}
+	.inner {
+		display: flex;
+		gap: 34px;
+		.service_tab {
+			width: 304px;
+			height: 300px;
+			border: 1px solid #d8d8d8;
+			overflow: hidden;
+			cursor: pointer;
+			.imgBox {
+				width: 304px;
+				height: 200px;
+				margin-bottom: 10px;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.text {
+				h3 {
+					text-align: center;
+					font-size: 19px;
+					color: #555;
+					margin-bottom: 10px;
+				}
+				p {
+					text-align: center;
+					font-size: 14px;
+					color: #666;
+				}
+			}
+		}
+	}
+}

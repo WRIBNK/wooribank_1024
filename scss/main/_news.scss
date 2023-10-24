@@ -1,0 +1,66 @@
+.news {
+	width: 100%;
+	height: 180px;
+	background-color: #f4f7fa;
+	font-family: 'Noto Sans KR', sans-serif;
+	display: flex;
+	justify-content: center;
+	margin: 40px 0px 50px 0px;
+	.inner {
+		width: 980px;
+		display: flex;
+		align-items: center;
+		.newsBox,
+		.eventBox {
+			display: flex;
+			.intro {
+				width: 82px;
+				h3 {
+					font-size: 18px;
+					color: #000;
+					margin-bottom: 5px;
+				}
+				p {
+					font-size: 12px;
+					color: #666;
+					background: url(../../img/main_page/ArrowBtn.png);
+					background-repeat: no-repeat;
+					background-size: 6px;
+					background-position: 40px center;
+					display: inline-block;
+					width: 60px;
+					height: 16px;
+				}
+			}
+			ul {
+				width: 384px;
+				li {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 5px;
+					a {
+						font-size: 14px;
+						color: #000;
+						&:hover {
+							text-decoration: underline;
+							color: #0083cb;
+						}
+					}
+
+					span {
+						color: #555;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		.newsBox {
+			width: 466px;
+			margin-right: 45px;
+		}
+		.eventBox {
+			width: 465px;
+		}
+	}
+}

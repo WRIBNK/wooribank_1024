@@ -1,0 +1,363 @@
+#pLogin{
+    min-width: 980px;
+    width: 100%;
+    // height: 80vh;
+    position: relative;
+    background-color: #f2f2f2;
+    padding-bottom: 70px;
+    .p_inner{
+        width: 980px;
+        margin: 0 auto;
+        h2{
+            display: block;
+            width: 100%;
+            height: 100px;
+            font: bold 30px/100px 'arial';
+            padding-left: 50px;
+        }
+        .p_txtBox{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .p_txt{
+                width: 40%;
+                height: 100%;
+                font: bold 20px/1.2 'arial';
+                margin-left: 50px;
+                color: #555;
+            }
+            .pList{
+                width: 60%;
+                height: 100%;
+                li{
+                    padding-bottom: 5px;
+                    font: 14px/1 'arial';
+                    display: flex;
+                    align-items: center;
+                    &:last-child{
+                        padding-bottom: 0;
+                    }
+                    img{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .content_box{
+            position: relative;
+            width: 100%;
+            box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: .6);
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;align-items: center;
+            margin-top: 50px;
+            .p_con1{
+                width: 475px;
+                height: 327px;
+                padding: 30px;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    height: 80%;
+                    position: absolute;
+                    right: 50%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #aaa;
+                }
+                &:first-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+                h3{
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    margin-bottom: 10px;
+                    font: bold 20px/50px 'arial';
+                }
+                .menu_list{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 320px;
+                    height: 22px;
+                    margin: 0 auto;
+                    li{
+                        height: 100%;
+                        a{
+                            // display: block;
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            text-align: center;
+                            font: bold 12px/22px 'arial';
+                            color: #777;
+                            margin: 0 10px;
+                            &:hover{
+                                color: #0087e5;
+                                border-bottom: 1px solid #0087e5;
+                            }
+                            &::after{
+                                content: '';
+                                display: block;
+                                width: 1px;
+                                height: 12px;
+                                background-color: #999;
+                                position: absolute;
+                                top: 50%;
+                                right: -10px;
+                                transform: translateY(-50%);
+                            }
+                        }
+                        &:nth-of-type(3){
+                            a::after{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .p_btns_imgBox{
+                    width: 100%;
+                    height: 85px;
+                    display: flex;
+                    justify-content: space-between;align-items: center;
+                    margin-bottom: 30px;
+                    .fina{
+                        width: 47%;
+                        height: 100%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .joint{
+                        width: 47%;
+                        height: 100%;
+                        img{
+                            width: 100%;height: 100%;
+                            object-fit: cover;
+                        }
+
+                    }
+                }
+                .popupCheck{
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    span{
+                        font: bold 12px/1 'arial';
+                        color: #333;
+                        margin-right: 20px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                    }
+                    .p_radioBox{
+                        display: flex;
+                        justify-content: flex-end;align-items: center;
+                        input[type='radio']{
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 5px;
+                        }
+                        label{
+                            font: 12px/1 'arial';
+                            margin-right: 10px;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+                
+                // 1번 오른쪽
+                .p_loginBox{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .login_input{
+                        width: 100%;
+                        input[type="text"],
+                        input[type="password"]{
+                            width: 95%;
+                            height: 40px;
+                            padding-left: 20px;
+                            border: 1px solid #ccc;
+                            background-color: rgb(232, 242, 253);
+                            font: bold 14px/1 'arial';
+                        }
+                    }
+                    .login_imgBox{
+                        width: 138px;
+                        height: 85px;
+                        cursor: pointer;
+                    }
+                }
+                .checkBox{
+                    width: 100%;
+                    height: 30px;
+                    margin: 40px 0 10px;
+                    font: 12px/1 'arial';
+                    display: flex;
+                    align-items: center;
+                    input[type="checkbox"]{
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        margin-top: -2px;
+                    }
+                }
+            }
+            .p_con2{
+                width: 50%;
+                padding: 20px 50px 20px 30px;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    height: 80%;
+                    position: absolute;
+                    right: 50%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #aaa;
+                }
+                &:first-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+                .WON_guide_imgBox{
+                    width: 412px;
+                    position: relative;
+                    #won1{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    #won2{
+                        width: 138px;
+                        height: 85px;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                    }
+                }
+                .guide_imgBox{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .guide_btn{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .p_con3{
+                width: 50%;
+                padding: 30px;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    height: 80%;
+                    position: absolute;
+                    right: 50%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #aaa;
+                }
+                &:first-child{
+                    &::after{
+                        display: none;
+                    }
+                }
+                h3{
+                    display: block;
+                    width: 100%;
+                    height: 50px;
+                    margin-bottom: 10px;
+                    position: relative;
+                    >a{
+                        font: bold 20px/50px 'arial';
+                        color: #000;
+                        display: inline-flex;
+                        align-items: center;
+                        cursor: pointer;
+                        img{
+                            margin-left: 10px;
+                        }
+                    }
+                    >p{
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        font: bold 12px/1 'arial';
+                        color: #666;
+                    }
+                }
+                ul.qus_list{
+                    width: 100%;
+                    li{
+                        display: block;
+                        width: 100%;
+                        height: 30px;
+                        a{
+                            font: bold 12px/30px 'arial';
+                            color: #555;
+                            &:hover{
+                                color: #0087e5;
+                                border-bottom: 1px solid #0087e5;
+
+                            }
+                        }
+                    }
+                }
+                // 오른쪽 콘텐츠 스타일
+                .con3_txtBox{
+                    width: 100%;
+                    margin-bottom: 18px;
+                    display: flex;
+                    justify-content: space-between;
+                    .p_title{
+                        width: 30%;
+                        &:nth-of-type(3){
+                            width: 40%;
+                        }
+                        .txt{
+                            width: 100%;
+                            height: 30px;
+                            text-align: left;
+                            font: bold 18px/30px 'arial';
+                            color: #0087e5;
+                        }
+                        span{
+                            font: bold 16px/1 'arial';
+                            color: #777;
+                        }
+                        em{
+                            display: inline-block;
+                            width: 50px;
+                            font: bold 14px/1 'arial';
+                            color: #777;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
