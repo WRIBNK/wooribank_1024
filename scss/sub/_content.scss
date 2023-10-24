@@ -417,6 +417,19 @@
 						object-fit: cover;
 					}
 				}
+				&:hover{
+					a{
+						>strong{
+							font: bold 16px/1 "맑은 고딕";
+							color: #0077cb;
+						}
+						p{
+							font: 14px/1 "맑은 고딕";
+							color: #0077cb;
+							margin: 5px 0;
+						}
+					}
+				}
 			}
 			// &::after,
 			// &::before {
@@ -463,6 +476,11 @@
 							height: 1px;
 							background-color: #ddd;
 							margin: 0 auto;
+						}
+					}
+					&:hover{
+						a{
+							color: #0077cb;
 						}
 					}
 				}

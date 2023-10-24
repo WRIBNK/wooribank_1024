@@ -2075,6 +2075,15 @@ footer .f_copyright .f_info2 ul li:hover .f_message {
   height: 100%;
   object-fit: cover;
 }
+.content .content_box_5 > ul > li:hover a > strong {
+  font: bold 16px/1 "맑은 고딕";
+  color: #0077cb;
+}
+.content .content_box_5 > ul > li:hover a p {
+  font: 14px/1 "맑은 고딕";
+  color: #0077cb;
+  margin: 5px 0;
+}
 .content .content_box_5 .consult {
   display: block;
   width: 170px;
@@ -2110,6 +2119,9 @@ footer .f_copyright .f_info2 ul li:hover .f_message {
   height: 1px;
   background-color: #ddd;
   margin: 0 auto;
+}
+.content .content_box_5 .consult ul li:hover a {
+  color: #0077cb;
 }
 
 #favor {
