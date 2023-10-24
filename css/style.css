@@ -144,7 +144,7 @@ header .header_subOn > span {
 footer {
   border-top: 2px solid #d4d4d4;
   width: 100%;
-  background: #fff url(../footer_img/img_footBg.png) repeat-x;
+  background: #fff url(../img/footer/img_footBg.png) repeat-x;
   padding-bottom: 30px;
 }
 footer .f_nav {
